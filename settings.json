@@ -1,0 +1,8 @@
+{
+    "ovUrl": "ovUrl",
+    "ovAccessKey": "ovAccessKey",
+    "ovSecretKey": "ovSecretKey",
+    "ovIntegrationName": "ovIntegrationName",
+
+    "fieldN": "dataN"
+}
