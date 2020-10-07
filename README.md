@@ -3,26 +3,27 @@ Documentation, HowTos and Best Practises for OneVizion integrations development
 
 View wiki at https://github.com/ov-integrations/documentation/wiki
 
-# Имя интеграции
+# Integration name
 
-Описание того, что делает эта интеграция
+Description of what this integration does, what task it performs
 
-## Требования
+## Requirments
 
-Описание того, что используется в этой интеграции, что должно быть дополнительно установлено на сервере клиента
+Description of what is used in this integration, what should be additionally installed on the client's server
 
-## Как использовать интеграцию
+## Usage
 
-Описания того, что должно быть сделано, чтобы интеграция заработала:
-1. Настроить сервис, с которым работает данная интеграция
-2. Создать специального пользователя для интеграции и выдать ему права для этой интеграции:
-   - Чтение данных в Trackor_1
-   - Чтение и изменение данных в Trackor_2
-3. Установить интеграцию в Integration Hub
-4. Заполнить файл настроек
-5. Включить интеграцию
+Descriptions of what needs to be done for the integration to work:
+1. Configure the service that this integration works with
+2. Create dedicated account for integration with following privs:
+   - Trackor_1 R (Read) 
+   - Trackor_2 RE (Read and Edit)
+3. Install this integration in Integration Hub
+4. Fill the integartion settings file
+   - For each parameter, you need to add a description of what should be written to it
+5. Enable the integartion
 
-Пример заполнения файла настроек
+Example of settings.json
 
 ```json
 {
