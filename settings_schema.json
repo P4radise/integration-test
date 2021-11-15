@@ -13,10 +13,6 @@
             "type": "string",
             "minLength": 1
         },
-        "ovIntegrationName": {
-            "type": "string",
-            "minLength": 1
-        },
         "fieldN": {
             "type": "string",
             "minLength": 1
