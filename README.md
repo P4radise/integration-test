@@ -30,7 +30,6 @@ Example of settings.json
     "ovUrl": "https://test.onevizion.com",
     "ovAccessKey": "*****",
     "ovSecretKey": "*****",
-    "ovIntegrationName": "Integration Name",
 
     "fieldN": "*****"
 }
