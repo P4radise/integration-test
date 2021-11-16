@@ -1,4 +1,4 @@
-from integration_log import LogLevel
+from onevizion import LogLevel
 
 
 class Integration:
