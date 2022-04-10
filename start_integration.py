@@ -1,14 +1,13 @@
-import sys
-import subprocess
+try:
+    from onevizion import IntegrationLog, LogLevel
+    from integration import Integration
+    from jsonschema import validate
+    import json
+except:
+    import sys
+    import subprocess
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', '-r', 'python_dependencies.txt'])
 
-
-subprocess.Popen([sys.executable, '-m', 'pip', 'install', '-r', 'python_dependencies.txt'])
-
-
-from onevizion import IntegrationLog, LogLevel
-from integration import Integration
-from jsonschema import validate
-import json
 
 with open('settings.json', "rb") as PFile:
     settings_data = json.loads(PFile.read().decode('utf-8'))
