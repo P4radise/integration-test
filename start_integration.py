@@ -7,6 +7,11 @@ except:
     import sys
     import subprocess
     subprocess.check_call([sys.executable, '-m', 'pip', 'install', '-r', 'python_dependencies.txt'])
+finally:
+    from onevizion import IntegrationLog, LogLevel
+    from integration import Integration
+    from jsonschema import validate
+    import json
 
 
 with open('settings.json', "rb") as PFile:
