@@ -1,15 +1,7 @@
-try:
-    from onevizion import IntegrationLog, LogLevel
-    from integration import Integration
-    from jsonschema import validate
-    import json
-except:
-    import os
-    import sys
-    import subprocess
-    subprocess.check_call([sys.executable, '-m', 'pip', 'install', '-r', 'python_dependencies.txt'])
-    os.system("python3 start_integration.py")
-    exit()
+from onevizion import IntegrationLog, LogLevel
+from integration import Integration
+from jsonschema import validate
+import json
 
 
 with open('settings.json', "rb") as PFile:
