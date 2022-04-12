@@ -1,5 +1,5 @@
 try:
-    import json
+    import jsonschema
     import onevizion
 except:
     import os
