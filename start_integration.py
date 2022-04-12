@@ -1,3 +1,14 @@
+try:
+    import json
+    import onevizion
+except:
+    import os
+    import sys
+    import subprocess
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', '-r', 'python_dependencies.txt'])
+    os.system(f'python3 {__file__}')
+    exit()
+
 from onevizion import IntegrationLog, LogLevel
 from integration import Integration
 from jsonschema import validate
