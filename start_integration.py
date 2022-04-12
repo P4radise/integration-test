@@ -14,6 +14,7 @@ from onevizion import IntegrationLog, LogLevel
 from integration import Integration
 from jsonschema import validate
 import json
+import re
 
 
 with open('settings.json', "rb") as PFile:
