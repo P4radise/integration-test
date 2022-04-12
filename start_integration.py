@@ -30,7 +30,7 @@ ov_url = settings_data['ovUrl']
 ov_access_key = settings_data['ovAccessKey']
 ov_secret_key = settings_data['ovSecretKey']
 
-field_n = settings_data['dataN']
+field_n = settings_data['fieldN']
 
 with open('ihub_parameters.json', "rb") as PFile:
     ihub_data = json.loads(PFile.read().decode('utf-8'))
