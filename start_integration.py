@@ -1,3 +1,9 @@
+from install_dependencies import Dependencies
+
+
+Dependencies.install()
+
+
 from onevizion import IntegrationLog, LogLevel
 from integration import Integration
 from jsonschema import validate
