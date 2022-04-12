@@ -22,7 +22,7 @@ try:
 except Exception as e:
     raise Exception("Incorrect value in the settings file\n{}".format(str(e)))
 
-ov_url = settings_data['ovUrl']
+ov_url = re.sub('^http://|^https://', '', settings_data['ovUrl'][:-1])
 ov_access_key = settings_data['ovAccessKey']
 ov_secret_key = settings_data['ovSecretKey']
 
