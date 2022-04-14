@@ -1,7 +1,7 @@
 import sys
 import subprocess
 
-subprocess.Popen([sys.executable, '-m', 'pip', 'install', '-r', 'python_dependencies.txt'])
+subprocess.Popen([sys.executable, '-m', 'pip', 'install', '-r', 'python_dependencies.txt'], shell=True)
 
 
 from onevizion import IntegrationLog, LogLevel
