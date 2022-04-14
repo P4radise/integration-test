@@ -1,3 +1,6 @@
+
+import os
+os.system(f'python3 install_dependencies.py')
 from onevizion import IntegrationLog, LogLevel
 from integration import Integration
 from jsonschema import validate
