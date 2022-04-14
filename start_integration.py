@@ -9,13 +9,16 @@ try:
     subprocess.check_call([sys.executable, '-m', 'pip', 'install', '-r', 'python_dependencies.txt'])
 except Exception as e:
     if re.search('which is not on PATH', e) is None:
+        print(123)
         raise e
     else:
         path = e[e.find("'") + 1:]
         path = path[:path.find("'")]
         if path is None:
+            print(456)
             raise e
         else:
+            print(789)
             sys.path.append(path)
 
 
