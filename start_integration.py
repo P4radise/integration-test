@@ -1,6 +1,25 @@
 
 import os
-os.system(f'python3 install_dependencies.py')
+import re
+import sys
+import subprocess
+print(os.environ['PATH'])
+
+try:
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', '-r', 'python_dependencies.txt'])
+except Exception as e:
+    if re.search('which is not on PATH', e) is None:
+        raise e
+    else:
+        path = e[e.find("'") + 1:]
+        path = path[:path.find("'")]
+        if path is None:
+            raise e
+        else:
+            sys.path.append(path)
+
+
+print(os.environ['PATH'])
 from onevizion import IntegrationLog, LogLevel
 from integration import Integration
 from jsonschema import validate
